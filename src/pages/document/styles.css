@@ -1,0 +1,103 @@
+.document__container {
+    width: 80%;
+}
+
+.document__form {
+    padding: 1rem;
+    text-align: center;
+}
+
+.document__h1 {
+    margin-top: 1rem;
+}
+
+.document__input {
+    width: 95%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.document__textarea {
+    width: 95%;
+    height: 100px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tool-list{
+    display: flex;
+    width: 520px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: calc(5% / 2);
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid var(--light);
+    overflow: hidden;
+}
+
+.tool__btn{
+    display: block;
+    border: none;
+    padding: 0.5rem;
+    font-size: 17px;
+    width: 40px;
+    transition: var(--transition);
+}
+
+.tool__btn:hover{
+    background-color: var(--dark);
+    color: #fff;
+    cursor: pointer;
+}
+
+.document__texteditor {
+    width: 95%;
+    height: 300px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--gray);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.document__texteditor:focus {
+    outline: none;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 2px #c3c3c3 inset;
+    background-color: var(--secondary-color);
+    color: var(--dark);
+    text-align: left;
+}
+
+.buttons{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.yellow-btn{
+    color: #fffe0d;
+}
+
+.purple-btn{
+    color: #7c7ce1;
+}
+
+.blue-btn{
+    color: #45cdfa;
+}
+
+.red-btn{
+    color: var(--secondary-error);
+}
+
+.undo-btn{
+   height: auto; 
+   font-weight: 700;
+   background-color: var(--light);
+}

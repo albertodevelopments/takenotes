@@ -1,0 +1,49 @@
+.topic__container {
+    width: 60%;
+}
+
+.topic__form {
+    padding: 1rem;
+    text-align: center;
+}
+
+.topic__h1 {
+    margin-top: 1rem;
+}
+
+.topic__input {
+    width: 95%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.back-btn{
+    border-radius: var(--border-radius);
+    border: 1px solid var(--dark);
+    background-color: var(--light);
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.back-btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--dark);
+}
+
+.back-btn:focus {
+    outline: none;
+}

@@ -1,0 +1,22 @@
+.message-box {
+    width: 95%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+   
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.error-box {
+    border: 1px solid var(--primary-error);
+    background-color: var(--secondary-error);
+}
+
+.success-box {
+    border: 1px solid var(--primary-success);
+    background-color: var(--secondary-success);
+}

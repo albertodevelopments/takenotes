@@ -1,0 +1,29 @@
+.main {
+    margin-left: 150px;
+}
+
+.main__h1 {
+    text-align: center;
+}
+
+.main__h3 {
+    text-align: center;
+    font-style: italic;
+}
+
+.main__nav-link {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.main__nav-link:hover {
+    color: var(--dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .main {
+        margin-left: 200px;
+    }
+}

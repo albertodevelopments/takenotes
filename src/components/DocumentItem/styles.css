@@ -1,0 +1,30 @@
+.document-item{
+    min-width: 100px;
+    transition: var(--transition);
+}
+
+.document-item:hover{
+    cursor: pointer;
+    color: var(--gray);
+}
+
+.document-main{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0.25rem;
+}
+
+.actions{
+    display: none;
+    gap: 5px;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.document-item:hover .actions{
+    display: flex;
+}
+
+

@@ -1,0 +1,29 @@
+.topic-item{
+    min-width: 100px;
+    transition: var(--transition);
+}
+
+.topic-item:hover{
+    cursor: pointer;
+    color: var(--gray);
+}
+
+.topic-main{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actions{
+    display: none;
+    gap: 5px;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.topic-item:hover .actions{
+    display: flex;
+}
+
+

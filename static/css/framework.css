@@ -1,0 +1,313 @@
+/*--------------------------------------------------------------------------*/
+/*----------------------------- CONFIGURACIÓN ------------------------------*/
+/*--------------------------------------------------------------------------*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------------------*/
+/*------------------------------- VARIABLES --------------------------------*/
+/*--------------------------------------------------------------------------*/
+:root {
+    --primary-color: #f4b824;
+    --secondary-color: #f5ecd4;
+    --dark: #2c2b2b;
+    --gray: #8a8484;
+    --light: #e6e5e3;
+    --error: #cb2b20d3;
+    --success: #069308;
+    --primary-error: #c00303;
+    --secondary-error: #cb2b20d3;
+    --primary-success: #069308;
+    --secondary-success: #23962ba1;
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+        Arial, sans-serif;
+    --transition: all 0.3s ease-in-out;
+    --header-height: 4rem;
+    --border-radius: 4px;
+}
+
+/*--------------------------------------------------------------------------*/
+/*-------------------------------- FUENTES ---------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------- ESTILOS GENÉRICOS ----------------------------*/
+/*--------------------------------------------------------------------------*/
+html,
+body {
+    width: 100%;
+    color: var(--dark);
+    height: calc(100vh - var(--header-height));
+    background-color: var(--light);
+    font-family: var(--font);
+    font-size: 14px;
+    margin: 0;
+}
+
+*,
+body {
+    font-family: var(--font);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------- GRID -----------------------------------*/
+/*--------------------------------------------------------------------------*/
+.grid {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.col-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+.col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+.col-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+.col-7 {
+    grid-template-columns: repeat(7, 1fr);
+}
+.col-8 {
+    grid-template-columns: repeat(8, 1fr);
+}
+.col-9 {
+    grid-template-columns: repeat(9, 1fr);
+}
+.col-10 {
+    grid-template-columns: repeat(10, 1fr);
+}
+.col-11 {
+    grid-template-columns: repeat(11, 1fr);
+}
+.col-12 {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.span-1 {
+    grid-column: span 1;
+}
+.span-2 {
+    grid-column: span 2;
+}
+.span-3 {
+    grid-column: span 3;
+}
+.span-4 {
+    grid-column: span 4;
+}
+.span-5 {
+    grid-column: span 5;
+}
+.span-6 {
+    grid-column: span 6;
+}
+.span-7 {
+    grid-column: span 7;
+}
+.span-8 {
+    grid-column: span 8;
+}
+.span-9 {
+    grid-column: span 9;
+}
+.span-10 {
+    grid-column: span 10;
+}
+.span-11 {
+    grid-column: span 11;
+}
+.span-12 {
+    grid-column: span 12;
+}
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------- TEXTO ----------------------------------*/
+/*--------------------------------------------------------------------------*/
+.display-1 {
+    font-size: 2rem;
+}
+
+.display-2 {
+    font-size: 1.5rem;
+}
+
+.display-3 {
+    font-size: 1.2rem;
+}
+
+/*--------------------------------------------------------------------------*/
+/*------------------------------ FORMULARIOS -------------------------------*/
+/*--------------------------------------------------------------------------*/
+.form {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.form__title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+    padding-left: 0;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.btn {
+    border: 1px solid var(--dark);
+    color: var(--dark);
+    font-family: var(--font);
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 0.35rem 0.65rem;
+    user-select: none;
+    font-size: 1.2rem;
+    height: 35px;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--dark);
+    border: 1px solid var(--light);
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.input {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid var(--dark);
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 3px solid var(--primary-color);
+    box-shadow: 0 0 2px #c3c3c3 inset;
+    background-color: var(--secondary-color);
+    color: var(--dark);
+}
+
+.input::placeholder {
+    color: var(--dark);
+    font-style: italic;
+    font-weight: normal;
+}
+
+.textarea {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border: 1px solid var(--dark);
+}
+
+.textarea:focus {
+    outline: none;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 2px #c3c3c3 inset;
+    background-color: var(--secondary-color);
+    color: var(--dark);
+}
+
+.textarea::placeholder {
+    color: var(--dark);
+    font-style: italic;
+    font-weight: normal;
+}
+
+/*--------------------------------------------------------------------------*/
+/*------------------------------ COMPONENTES -------------------------------*/
+/*--------------------------------------------------------------------------*/
+.card {
+    background: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--dark);
+}
+
+/*--------------------------------------------------------------------------*/
+/*-------------------------------- HELPERS ---------------------------------*/
+/*--------------------------------------------------------------------------*/
+.w100 {
+    width: 100%;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/* .red-icon{
+    background-color: var(--red);
+}
+
+.green-icon{
+    background-color: var(--green);
+}
+
+.purple-icon{
+    background-color: var(--purple);
+}
+
+.blue-icon{
+    background-color: var(--blue);
+} */
